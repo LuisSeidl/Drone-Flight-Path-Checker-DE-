@@ -1,0 +1,24 @@
+{
+	"name": "Drone Flight Path Checker",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance", 
+				"ms-azuretools.vscode-docker"
+			],
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/bin/python3",
+				"python.analysis.typeCheckingMode": "basic"
+			}
+		}
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	"workspaceFolder": "/workspace",
+    "overrideCommand": true,
+	"remoteUser": "root"
+}
