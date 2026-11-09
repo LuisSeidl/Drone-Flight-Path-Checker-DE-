@@ -1,3 +1,6 @@
+ipython
+ipykernel
+pydjirecord
 requests
-pandas
-numpy
+beautifulsoup4
+lxml
